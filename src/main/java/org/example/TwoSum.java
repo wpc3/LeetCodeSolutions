@@ -1,10 +1,9 @@
 package org.example;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution {
+public class TwoSum {
 /**
     Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -51,5 +50,6 @@ public class Solution {
         }
 
     return newAnswer ;
+
     }
 }
