@@ -29,27 +29,21 @@ public class TwoSum {
 */
     public int[] twoSum(int[] nums, int target) {
 
-        List<Integer> answer = new ArrayList<>();
+        int[] arr = new int[2];
+        for(int i=0;i<nums.length;i++){
+            for(int j =0;j<nums.length;j++){
+                if(i!=j){
+                    if(nums[i]+nums[j]==target){
+                        arr[0]=i;
+                        arr[1]=j;
+                        break;
+                    }
+                }
 
-        for(int i =0; i<nums.length; i++){
-            if(nums[i] + nums[i+1] == target){
-                answer.add(i);
-                answer.add(i+1);
             }
-//            for(int j = 0; j<nums.length-1; j++){
-//                if(nums[i] + nums[j] == target){
-//                    answer.add(i);
-//                    answer.add(j);
-//                }
-//            }
-
         }
-      int [] newAnswer = new int[answer.size()];
-        for (int i =0; i<answer.size(); i++){
-            newAnswer[i] = answer.get(i);
-        }
-
-    return newAnswer ;
-
+        return arr;
     }
+
+
 }
