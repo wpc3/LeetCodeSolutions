@@ -8,6 +8,8 @@ where e.salary < (select max(e.salary) from employee e);
 
 Example 1:
 
+
+
 Input:
 Employee table:
 +----+--------+
