@@ -1,23 +1,36 @@
 package org.example;
 
 public class LongestSubstringNonRepeatingCharacters {
-    public int lengthOfLongestSubstring(String s) {
-        int n = s.length();
-        int answer = 0;
+    static boolean checkPal(String s, int low, int high) {
+        while (low < high) {
+            if (s.charAt(low) != s.charAt(high))
+                return false;
+            low++;
+            high--;
+        }
+        return true;
+    }
 
-        for(int i =0; i<n; i++){
-            boolean[] visited = new boolean[256];//Array to track the visited characters
-            for(int j=i; j<n; j++){
-                if(visited[s.charAt(j)]){
-                    break;
+    public String longestPalindrome(String s) {
+        int n = s.length();
+
+        // All substrings of length 1 are palindromes
+        int maxLen = 1, start = 0;
+
+        // Nested loop to mark start and end index
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+
+                // Check if the current substring is
+                // a palindrome
+                if (checkPal(s, i, j) && (j - i + 1) > maxLen) {
+                    start = i;
+                    maxLen = j - i + 1;
                 }
-                else{
-                    answer = Math.max(answer,j-i+1);//Update the max length of the substring found
-                    visited[s.charAt(j)] = true; //Mark the character as visited
-                }
+
             }
         }
-        return answer;
+        return s.substring(start,start + maxLen);
     }
 
 }
