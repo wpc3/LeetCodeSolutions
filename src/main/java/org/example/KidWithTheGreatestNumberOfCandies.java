@@ -13,10 +13,10 @@ public class KidWithTheGreatestNumberOfCandies {
                 maxCandies = candies[i];
 
             }
-            System.out.println(maxCandies);
+
             for (int j = 0; j < candies.length; j++) {
 
-                if (candies[j] + extraCandies >= maxCandies) {
+                if(candies[j] + extraCandies >= maxCandies) {
                     result[j] = true;
                 } else {
                     result[j] = false;
