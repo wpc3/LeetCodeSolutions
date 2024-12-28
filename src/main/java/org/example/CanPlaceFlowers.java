@@ -6,6 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class CanPlaceFlowers {
+
+    //Code
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
 
         int i = 0, count = 1;
