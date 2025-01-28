@@ -1,0 +1,16 @@
+Question: Show first name and last name concatinated into one column to show their full name.
+
+select concat(first_name, " ", last_name) as full_name from patients;
+
+/*
+  Start by selecting a question by pressing 'Start' or 'View All Questions'.
+  Use the resources and information about the database from the left panel to help.
+  Press the run button to execute the query.
+  Question is automatically validated every time you execute the query.
+  Make your output match the expected output.
+
+
+  Keybinds:
+    [ctrl + enter]: Execute the SQL
+    [ctrl + q]: Auto-format the SQL
+*/
