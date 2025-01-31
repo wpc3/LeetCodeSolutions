@@ -1,0 +1,16 @@
+Question: Show how many patients have a birth_date with 2010 as the birth year.
+
+select count(patient_id) as total_patients from patients where birth_date between '2010-01-01' and '2010-31-12';
+
+/*
+  Start by selecting a question by pressing 'Start' or 'View All Questions'.
+  Use the resources and information about the database from the left panel to help.
+  Press the run button to execute the query.
+  Question is automatically validated every time you execute the query.
+  Make your output match the expected output.
+
+
+  Keybinds:
+    [ctrl + enter]: Execute the SQL
+    [ctrl + q]: Auto-format the SQL
+*/
