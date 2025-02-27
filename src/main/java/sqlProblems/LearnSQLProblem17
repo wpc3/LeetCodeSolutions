@@ -1,0 +1,16 @@
+Question: Show unique birth years from patients and order them by ascending.
+
+select distinct(year(birth_date)) as birth_year from patients order by birth_year asc;
+
+/*
+  Start by selecting a question by pressing 'Start' or 'View All Questions'.
+  Use the resources and information about the database from the left panel to help.
+  Press the run button to execute the query.
+  Question is automatically validated every time you execute the query.
+  Make your output match the expected output.
+
+
+  Keybinds:
+    [ctrl + enter]: Execute the SQL
+    [ctrl + q]: Auto-format the SQL
+*/
