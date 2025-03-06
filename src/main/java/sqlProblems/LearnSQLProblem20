@@ -1,0 +1,17 @@
+Question: Display every patient's first_name.
+          Order the list by the length of each name and then by alphabetically.
+
+select first_name from patients order by len(first_name), first_name asc;
+
+/*
+  Start by selecting a question by pressing 'Start' or 'View All Questions'.
+  Use the resources and information about the database from the left panel to help.
+  Press the run button to execute the query.
+  Question is automatically validated every time you execute the query.
+  Make your output match the expected output.
+
+
+  Keybinds:
+    [ctrl + enter]: Execute the SQL
+    [ctrl + q]: Auto-format the SQL
+*/
