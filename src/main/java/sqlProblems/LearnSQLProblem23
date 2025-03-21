@@ -1,7 +1,4 @@
-Question: Show patient_id, diagnosis from admissions. Find patients admitted multiple times for the same diagnosis.
-
-select patient_id, diagnosis from admissions group by patient_id, diagnosis having count(diagnosis) > 1;
-
+select city, count(patient_id) as num_patients from patients group by city order by num_patients desc, city asc;
 
 /*
   Start by selecting a question by pressing 'Start' or 'View All Questions'.
