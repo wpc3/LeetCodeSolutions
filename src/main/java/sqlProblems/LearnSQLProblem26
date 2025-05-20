@@ -15,3 +15,4 @@ select concat(upper(last_name),',', lower(first_name)) as new_name_format from p
     [ctrl + enter]: Execute the SQL
     [ctrl + q]: Auto-format the SQL
 */
+
