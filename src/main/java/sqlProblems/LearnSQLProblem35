@@ -1,0 +1,20 @@
+Question: display the first name, last name and number of duplicate patients based on their first name and last name.
+
+          Ex: A patient with an identical name can be considered a duplicate.
+
+select first_name, last_name, count(*) as num_of_duplicates from patients
+group by concat(first_name, last_name) having count(*) > 1;
+;
+
+/*
+  Start by selecting a question by pressing 'Start' or 'View All Questions'.
+  Use the resources and information about the database from the left panel to help.
+  Press the run button to execute the query.
+  Question is automatically validated every time you execute the query.
+  Make your output match the expected output.
+
+
+  Keybinds:
+    [ctrl + enter]: Execute the SQL
+    [ctrl + q]: Auto-format the SQL
+*/
