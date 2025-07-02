@@ -1,0 +1,20 @@
+Question: Show all of the patients grouped into weight groups.
+          Show the total amount of patients in each weight group.
+          Order the list by the weight group decending.
+
+          For example, if they weight 100 to 109 they are placed in the 100 weight group, 110-119 = 110 weight group, etc.
+
+select count(patient_id) as patients_in_group, floor(weight/10) * 10 as weight_group from patients group by weight_group order by weight desc;
+
+/*
+  Start by selecting a question by pressing 'Start' or 'View All Questions'.
+  Use the resources and information about the database from the left panel to help.
+  Press the run button to execute the query.
+  Question is automatically validated every time you execute the query.
+  Make your output match the expected output.
+
+
+  Keybinds:
+    [ctrl + enter]: Execute the SQL
+    [ctrl + q]: Auto-format the SQL
+*/
