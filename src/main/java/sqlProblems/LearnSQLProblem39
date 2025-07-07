@@ -1,0 +1,20 @@
+Question: Show patient_id, first_name, last_name, and attending doctor's specialty.
+          Show only the patients who has a diagnosis as 'Epilepsy' and the doctor's first name is 'Lisa'
+
+select p.patient_id, p.first_name as patient_first_name, p.last_name as patient_last_name, d.specialty
+from admissions a left join doctors d on d.doctor_id = a.attending_doctor_id
+left join patients p on p.patient_id = a.patient_id
+where a.diagnosis = 'Epilepsy' and d.first_name = 'Lisa';
+
+/*
+  Start by selecting a question by pressing 'Start' or 'View All Questions'.
+  Use the resources and information about the database from the left panel to help.
+  Press the run button to execute the query.
+  Question is automatically validated every time you execute the query.
+  Make your output match the expected output.
+
+
+  Keybinds:
+    [ctrl + enter]: Execute the SQL
+    [ctrl + q]: Auto-format the SQL
+*/
